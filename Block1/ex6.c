@@ -10,10 +10,12 @@ int main() {
 				return 1;
 		}
 
-		for (int i = 1; i <= num; i++) {
+		int found = 0;
+
+		for (int i = 1; i*i*i <= num; i++) {
 				if (num == (i*i*i)) {
 						printf("%d ", i);
-				}
+				} 
 		}
 
 		return 0;
